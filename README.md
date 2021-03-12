@@ -9,10 +9,12 @@ List of Task covered
 4) Print top 5 most used libraries to standard output
 
 Programming Language - Java
+
 Built Using - Maven Compiler 1.7
 
 Libraries Used
 jsoup - 1.10.2
+
 junit - 4.11
 
 The solution is comprised of different components
