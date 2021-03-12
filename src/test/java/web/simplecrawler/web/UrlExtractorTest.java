@@ -1,4 +1,4 @@
-package crawler.scalablecapital;
+package web.simplecrawler.web;
 
 import web.simplecrawler.web.Utilities.UrlExtractor;
 import org.junit.Test;

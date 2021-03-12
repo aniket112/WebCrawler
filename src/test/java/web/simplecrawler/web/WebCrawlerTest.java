@@ -1,4 +1,4 @@
-package crawler.scalablecapital;
+package web.simplecrawler.web;
 
 import org.apache.commons.io.IOUtils;
 import org.jsoup.Jsoup;
@@ -10,11 +10,8 @@ import org.jsoup.select.Elements;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import web.simplecrawler.web.GoogleWebParser;
 import web.simplecrawler.web.Interface.LibraryProcessor;
 import web.simplecrawler.web.Interface.WebParser;
-import web.simplecrawler.web.JavaScriptLibraryProcessor;
-import web.simplecrawler.web.WebCrawler;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -118,7 +115,7 @@ public class WebCrawlerTest {
 
         if(webDocument.isPresent()) {
             Elements results =  parser.extractSearchResultsFromPage(webDocument.get());
-            assertTrue(results.size() > 0);
+            Assert.assertTrue(results.size() > 0);
         } else {
             System.out.println("Could not execute CrawlerApiTest due to network connectivity issue");
         }
